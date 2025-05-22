@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>翔律創意工作室 Segelvoler Studio </title>
+		<style>
+		    * {
+			box-sizing: border-box;
+			margin: 0;
+			padding: 0;
+			}
+	
+			.navbar {
+			background-color: #ffc553;
+			padding: 1rem 2rem;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			flex-wrap: wrap;
+			}
+			
+			.logo-text {
+			font-size: 1.8rem;
+			font-weight: bold;
+			color: white;
+			}
+			
+			ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			}
+			
+			.menu {
+			display: flex;
+			gap: 1.5rem;
+			} 
+			
+			.menu a {
+			color: white;
+			font-size: 1.2rem;
+			font-weight: bold;
+			text-decoration: none;
+			transition: color 0.3s ease;
+			}
+			
+			.menu a:hover{
+			background: #ffffff;
+			color: #ffc553;
+			}
+			
+			.menu-toggle {
+			display: none;
+			font-size: 1.5rem;
+			cursor: pointer;
+			}
+			
+			.dropdown {
+			position: relative;
+			}
+
+			.dropdown-content {
+			display: none;
+			position: absolute;
+			background-color: #ffc553;
+			min-width: 160px;
+			max-width: 90vw; 
+			top: 100%;
+			left: 0;
+			right: auto;
+			box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+			overflow-wrap: break-word;
+			word-break: break-word;
+			z-index: 999;
+			padding: 0.5rem 0;
+			flex-direction: column;
+			}
+
+			.dropdown-content a {
+			padding: 0.75rem 1rem;
+			display: block;
+			color: white;
+			}
+
+			.dropdown-content a:hover {
+			background-color: #white;
+			}
+
+			.dropdown:hover .dropdown-content {
+			display: flex;
+			}
+			
+			@media (max-width: 768px) {
+			.menu {
+			flex-direction: column;
+			width: 100%;
+			display: none;
+			margin-top: 1rem;
+			}
+
+			.menu.active {
+			display: flex;
+			}
+
+			.menu-toggle {
+			display: block;
+			}
+			
+			.dropdown-content {
+			position: static;
+			box-shadow: none;
+			}
+	  
+			}
+  </style>
+	</head>
+	<body>
+		<nav class="navbar">
+			<h1 class="logo-text">Segelvoler Studio</h1>
+			  <ul class="menu">
+				<li><a href="#">首頁</a></li>
+				  <div class="dropdown">
+					<a href="#">關於 ▼</a>
+					<div class="dropdown-content">
+					  <a href="#">關於翔律創意</a>
+					  <a href="#">組織章程</a>
+					</div>
+				  </div>
+				<li><a href="#">合作夥伴</a></li>
+			  </ul>
+		</nav>
+
+		<footer>
+			<h3>翔律創意工作室</h3>
+			<p> &copy 2019 - 2025 Segelvoler Studio, All Rights Reserved</p>
+		</footer>
+	</body>
+</html>
